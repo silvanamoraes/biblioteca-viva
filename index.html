@@ -32,7 +32,7 @@ nav.open{display:block}nav ul{flex-direction:column;gap:0;padding:6px 22px 14px}
 .hero dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px 28px;margin-top:40px;padding-top:24px;border-top:1px solid rgba(244,241,234,.25)}
 .hero dt{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7}.hero dd{font-size:.98rem}
 .quote{background:var(--bg2);padding:52px 0;text-align:center;border-bottom:1px solid var(--line)}
-.quote blockquote{font-family:var(--serif);font-size:clamp(1.25rem,3.4vw,1.85rem);line-height:1.4;max-width:780px;margin:0 auto;padding:0 22px}
+.quote blockquote{font-family:var(--serif);font-size:clamp(1.05rem,2.5vw,1.6rem);line-height:1.45;max-width:1040px;margin:0 auto;padding:0 22px}
 .quote cite{display:block;margin-top:12px;font-size:.82rem;font-style:normal;color:var(--muted);letter-spacing:.1em}
 section{padding:68px 0;border-bottom:1px solid var(--line)}section.alt{background:var(--bg2)}
 .grid{display:grid;grid-template-columns:260px 1fr;gap:48px}@media (max-width:860px){.grid{grid-template-columns:1fr;gap:18px}}
@@ -106,6 +106,13 @@ table.t th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:va
 .pp .ph2::after{content:"";position:absolute;left:0;bottom:0;width:56px;height:4px;background:var(--accent)}
 .pp small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .pp h3{margin:4px 0;line-height:1.25}.pp p{font-size:.9rem;color:var(--muted)}.pp a{font-size:.9rem;border-bottom:1px solid var(--accent);text-decoration:none}
+.mat{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:8px}
+.mc{grid-column:span 2;background:var(--bg2);border-top:4px solid var(--c);padding:20px 20px 22px}
+.mc:nth-child(n+4){grid-column:span 3}
+.mc small{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mc h4{font-family:var(--serif);font-weight:400;font-size:1.2rem;line-height:1.25;margin:6px 0 8px}
+.mc p{font-size:.92rem;color:var(--muted);line-height:1.6}
+@media (max-width:860px){.mat{grid-template-columns:1fr}.mc,.mc:nth-child(n+4){grid-column:auto}}
 </style>
 </head>
 <body>
@@ -128,7 +135,7 @@ table.t th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:va
 </div></div>
 <div class="wrap"><dl><div><dt>Autora</dt><dd>Silvana Moraes</dd></div><div><dt>Orientação</dt><dd>Prof. Dr. Daniel Andrioli de Lima</dd></div><div><dt>Curso</dt><dd>Arquitetura e Urbanismo</dd></div><div><dt>Local</dt><dd>Limeira · SP</dd></div><div><dt>Ano</dt><dd>2026</dd></div></dl></div></div>
 
-<div class="quote"><blockquote>“Projetar não é apenas desenhar formas, é estruturar o cenário onde a vida acontece com precisão e humanidade.”<cite>SILVANA MORAES</cite></blockquote></div>
+<div class="quote"><blockquote>“Projetar não é apenas desenhar formas,<br>é estruturar o cenário onde a vida acontece com precisão e humanidade.”<cite>SILVANA MORAES</cite></blockquote></div>
 
 <section id="resumo"><div class="wrap">
 <div class="grid"><div><span class="eyebrow">01 · Resumo</span><h2>Uma biblioteca para o <em>encontro</em>.</h2></div>
@@ -147,17 +154,12 @@ table.t th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:va
 <div><dt>Modelagem</dt><dd>Revit (BIM)</dd></div>
 </dl>
 <h3 class="sub">Materiais</h3>
-<ul class="mats rv">
-<li><b>Concreto aparente:</b> honestidade construtiva, robustez e identidade cívica clara ao edifício.</li>
-<li><b>Vidros e aberturas amplas:</b> conectam a transparência visual da paisagem do parque para dentro dos espaços de leitura e exibem a vida ativa da biblioteca para a rua, o que favorece a vigilância natural e a segurança do entorno.</li>
-<li><b>Piso de madeira natural:</b> traz a ideia de aconchego e conforto tátil, e ajuda no desempenho acústico da área das apresentações e na absorção de impacto no palco.</li>
-<li><b>Piso vinílico de alto tráfego com acabamento amadeirado:</b> garante a mesma sensação visual de aconchego e conforto térmico, com excelente absorção do ruído de passos e facilidade de limpeza e manutenção para o uso público intenso.</li>
-<li><b>Pisos drenantes intertravados:</b> garantem a permeabilidade do solo e são superfícies aderentes, que evitam escorregamentos em áreas de grande fluxo, e permitem manutenção localizada, rápida e econômica em caso de reparo.</li>
-</ul>
-<h3 class="sub">Implantação</h3>
-<div class="impl rv">
-<figure class="zoom"><img src="img/implantacao.png" alt="Planta de implantação do conjunto" loading="lazy"><figcaption>Planta de implantação. Elaborada pela autora (2026).</figcaption></figure>
-<div class="tw"><table class="t"><thead><tr><th>Tabela de implantação</th><th>Área</th></tr></thead><tbody><tr><td>Acolhimento</td><td>852,03 m²</td></tr><tr><td>ADM</td><td>1.182,89 m²</td></tr><tr><td>Anfiteatro</td><td>1.012,40 m²</td></tr><tr><td>Banheiros</td><td>128,67 m²</td></tr><tr><td>Biblioteca</td><td>2.351,38 m²</td></tr><tr><td>Campo de futebol</td><td>2.208,88 m²</td></tr><tr><td>Ciclovia</td><td>4.260,35 m²</td></tr><tr><td>Cultural</td><td>2.347,48 m²</td></tr><tr><td>Estacionamento</td><td>8.339,33 m²</td></tr><tr><td>Horta</td><td>1.090,65 m²</td></tr><tr><td>Ludoteca</td><td>974,57 m²</td></tr><tr><td>Parque</td><td>26.114,85 m²</td></tr><tr><td>Parquinho</td><td>713,94 m²</td></tr><tr><td>Pista de skate</td><td>3.841,26 m²</td></tr><tr><td>Praça de alimentação</td><td>3.035,08 m²</td></tr><tr><td>Praça seca</td><td>3.712,41 m²</td></tr><tr><td>Pátio Central</td><td>1.916,49 m²</td></tr><tr><td>Tecnologia</td><td>971,86 m²</td></tr></tbody><tfoot><tr><td>Total geral</td><td>65.054,53 m²</td></tr></tfoot></table></div>
+<div class="mat rv">
+<div class="mc" style="--c:#272c25"><small>Edifício</small><h4>Concreto aparente</h4><p>Honestidade construtiva, robustez e identidade cívica clara ao edifício.</p></div>
+<div class="mc" style="--c:#62683f"><small>Aberturas</small><h4>Vidros e aberturas amplas</h4><p>Conectam a transparência visual da paisagem do parque para dentro dos espaços de leitura e exibem a vida ativa da biblioteca para a rua, o que favorece a vigilância natural e a segurança do entorno.</p></div>
+<div class="mc" style="--c:#bd683f"><small>Piso · apresentações</small><h4>Piso de madeira natural</h4><p>Traz a ideia de aconchego e conforto tátil, e ajuda no desempenho acústico da área das apresentações e na absorção de impacto no palco.</p></div>
+<div class="mc" style="--c:#cebeb0"><small>Piso · uso intenso</small><h4>Piso vinílico amadeirado</h4><p>De alto tráfego, garante a mesma sensação visual de aconchego e conforto térmico, com excelente absorção do ruído de passos e facilidade de limpeza e manutenção para o uso público intenso.</p></div>
+<div class="mc" style="--c:#1f3d2f"><small>Piso · áreas externas</small><h4>Pisos drenantes intertravados</h4><p>Garantem a permeabilidade do solo e são superfícies aderentes, que evitam escorregamentos em áreas de grande fluxo, e permitem manutenção localizada, rápida e econômica em caso de reparo.</p></div>
 </div>
 </div></section>
 
@@ -214,7 +216,7 @@ table.t th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:va
 <li><div><b>Flexibilidade</b><span>Grandes vãos livres e estrutura independente das vedações permitem reconfigurar as salas multiuso ao longo do tempo.</span></div></li>
 </ol>
 <p class="note" style="max-width:720px">Dois marcos verticais organizam a chegada: o obelisco anuncia a biblioteca na escala urbana, e o totem identifica a entrada na escala do pedestre.</p>
-<h3 class="sub">O que aprendi com quatro casos</h3>
+<h3 class="sub">O que aprendi com quatro estudos de caso</h3>
 <div class="cards rv">
 <div class="card"><em>Ribeirão Preto · SP</em><h3>Biblioteca Sinhá Junqueira</h3><span>Setorização por vocação e espaço de acolhimento doméstico.</span></div>
 <div class="card"><em>Florianópolis · SC</em><h3>Centro Cultural Veras</h3><span>Edifício-praça e integração conectiva por pátios.</span></div>
